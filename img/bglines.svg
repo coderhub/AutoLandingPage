@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2880px" height="3563px" viewBox="0 0 2880 3563" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>bglines</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#131F36" offset="0%"></stop>
+            <stop stop-color="#1F3053" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2k" transform="translate(0.000000, -3649.000000)" stroke-width="7" stroke="url(#linearGradient-1)">
+            <g id="bglines" transform="translate(-692.000000, 3028.000000)">
+                <polyline id="Path-17" points="0 0 1598.40625 1445.78125 36.8125 2650.5625"></polyline>
+                <polyline id="Path-17" points="10 532 1608.40625 1977.78125 46.8125 3182.5625"></polyline>
+                <polyline id="Path-17" transform="translate(3277.265625, 2624.093750) scale(-1, 1) translate(-3277.265625, -2624.093750) " points="2824.125 930 4422.53125 2375.78125 2132 4318.1875"></polyline>
+                <polyline id="Path-17" transform="translate(3153.000000, 3083.914062) scale(-1, 1) translate(-3153.000000, -3083.914062) " points="2565.57813 1462 4167 2908.78125 2139 4705.82812"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

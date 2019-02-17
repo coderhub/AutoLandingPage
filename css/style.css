@@ -1,0 +1,226 @@
+h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+  color: #FFF;
+}
+
+p, a {
+  font-family: 'Lato', sans-serif;
+  font-weight: 200;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.bg-light {
+  background-color: transparent !important;
+}
+
+.navbar-light .navbar-brand {
+  color: #FFF;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #C0C4F8;
+  font-weight: 200;
+}
+
+.form-control {
+  background-color: rgba(0,0,0,.5);
+  border: none;
+}
+
+form.hero-form {
+  position: relative;
+}
+
+.hero-form {
+  width: 80%;
+}
+
+input#exampleInputEmail1 {
+  padding-right: 105px;
+}
+
+.hero-form .btn-primary {
+  position: absolute;
+  right: 4px;
+  top: 2px;
+}
+
+.btn-primary {
+  color: #fff;
+  background: -webkit-linear-gradient(0turn, #3023AE, #C96DD8);
+  border:0px;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.text {
+  color: #C0C4F8;
+  font-size: .85rem;
+  line-height: 2;
+  font-weight: 200;
+}
+
+.text-lt {
+  color: #FFF;
+  font-size: .85rem;
+  line-height: 2;
+  font-weight: 200;
+}
+
+.text-gradient {
+  color: #3023AE;
+  background: -webkit-linear-gradient(0turn, #3023AE, #C96DD8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero {
+  height: 100vh;
+  margin-top: -60px;
+  padding-top: 120px;
+  background-image: url('../img/Driven-background-sm.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video {
+  height: 100vh;
+  padding-top: 50vh;
+  background-image: url('../img/video-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text-dots {
+  display: block;
+  position: absolute;
+  top: -18px;
+  left: -82px;
+  height: 120px;
+  width: 100%;
+  background-image: url(../img/text-dots.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.map-markers {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.marker {
+  width: 200px;
+  position: absolute;
+  transform: translateY(0px);
+  animation-name: bounce;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {transform: translateY(0px);} 
+  50% {transform: translateY(-30px);}
+  100% {transform: translateY(0px);}
+}
+
+.p1 {
+  top: 15%;
+  left: 15%;
+}
+
+.p2 {
+  top: 40%;
+  left: 60%;
+}
+
+.section-text {
+  display: block;
+  position: relative;
+}
+
+.play-outer {
+  height: 75px;
+  width: 75px;
+  border: 2px solid #FFF;
+  background: linear-gradient(to right, #3023AE, #C96DD8);
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.play-btn {
+  margin: 0 auto;
+  top: 25%;
+  left: 5%;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 1em 0 1em 2em;
+  border-color: transparent transparent transparent #FFF; 
+}
+
+.screen-one, .screen-two, .bottom{
+  padding: 60px 0px;
+}
+
+.video {
+  padding: 30vh 0;
+}
+
+.screen-one img, .screen-two img{
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#bg-lines-img {
+  position: absolute;
+  width: 100%;
+}
+
+.screens{
+  background: linear-gradient(#142037, #0F192B);
+}
+
+.bottom {
+  height: 100vh;
+  background-image: url('../img/Bottom-bg-map.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bottom .section-text {
+  padding-bottom: 70px;
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+   .map-markers {
+    display: none;
+   }
+  }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .map-markers {
+    display: block;
+   }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1600px) {
+  
+}
