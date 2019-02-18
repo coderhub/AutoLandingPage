@@ -1,6 +1,17 @@
+
+body {
+  background-color: #142037;
+}
+
 h1, h2, h3 {
   font-family: 'Lato', sans-serif;
   color: #FFF;
+}
+
+#page-wrap {
+  max-width: 1600px;
+  margin: 0 auto;
+  min-width: 375px;
 }
 
 p, a {
@@ -20,13 +31,24 @@ body {
   color: #FFF;
 }
 
-.navbar-light .navbar-nav .nav-link {
+.navbar-dark .navbar-nav .nav-link {
   color: #C0C4F8;
   font-weight: 200;
+  font-size: 14px;
+}
+
+.nav-item.signup-btn {
+  background: rgba(255,255,255,0.2);
+  border-radius: 4px;
+  padding: 0px 6px;
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #FFF;
 }
 
 .form-control {
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.3);
   border: none;
 }
 
@@ -38,14 +60,27 @@ form.hero-form {
   width: 80%;
 }
 
+.hero .text {
+  display: block;
+  width: 65%;
+}
+
 input#exampleInputEmail1 {
   padding-right: 105px;
+  height: 50px;
+}
+
+input#exampleInputEmail1::placeholder {
+  color: #BFC4F8;
+  font-size: 14px;
+  font-weight: 200;
+  opacity: .4;
 }
 
 .hero-form .btn-primary {
   position: absolute;
-  right: 4px;
-  top: 2px;
+  right: 10px;
+  top: 8px;
 }
 
 .btn-primary {
@@ -68,6 +103,7 @@ input#exampleInputEmail1 {
   font-size: .85rem;
   line-height: 2;
   font-weight: 200;
+  padding: 20px 0;
 }
 
 .text-gradient {
@@ -79,12 +115,14 @@ input#exampleInputEmail1 {
 
 .hero {
   height: 100vh;
+  max-height: 880px;
   margin-top: -60px;
   padding-top: 120px;
   background-image: url('../img/Driven-background-sm.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .video {
@@ -144,6 +182,8 @@ input#exampleInputEmail1 {
 .section-text {
   display: block;
   position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .play-outer {
@@ -171,8 +211,45 @@ input#exampleInputEmail1 {
   padding: 60px 0px;
 }
 
+.homeimg {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+
+#screenone.visible .homeimg {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+
+/* fade in text from left to right */
+.screen-one .section-text {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all .6s ease-in-out;
+}
+
+#screenone.visible .section-text {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.screen-one .text-lt {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: all .6s ease-in-out;
+}
+
+#screenone.visible .text-lt {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+
 .video {
-  padding: 30vh 0;
+  padding: 20vh 0;
+  max-height: 880px;
 }
 
 .screen-one img, .screen-two img{
@@ -187,11 +264,11 @@ input#exampleInputEmail1 {
 }
 
 .screens{
+  position: relative;
   background: linear-gradient(#142037, #0F192B);
 }
 
 .bottom {
-  height: 100vh;
   background-image: url('../img/Bottom-bg-map.png');
   background-size: cover;
   background-position: center;
@@ -200,6 +277,59 @@ input#exampleInputEmail1 {
 
 .bottom .section-text {
   padding-bottom: 70px;
+}
+
+.bottom .text-dots {
+  top: -11px;
+  right: 0;
+  left: -20px;
+}
+
+footer {
+  padding-top: 40px;
+}
+
+.bottom .text-muted {
+  font-weight: 200;
+  color:rgb(190, 195, 247)!important;
+  padding: 20px 0;
+}
+
+.bottom .btn {
+  padding: 12px 54px;
+  margin-bottom: 80px;
+}
+
+.copyright {
+  color: #C0C4F8;
+  text-align: center;
+}
+
+footer a {
+  color: #C0C4F8;
+}
+
+footer hr {
+  background: rgba(255,255,255,.1);
+}
+
+.bottom input::placeholder {
+  color: rgb(190, 195, 247);
+  font-size: 14px;
+  font-weight: 200;
+}
+
+input#exampleInputZip1 {
+  margin-left: 16px;
+}
+
+.bottom input {
+  color: #ccc;
+  display: inline-block;
+  height: 60px;
+  background: none;
+  border-radius: 0;
+  border-bottom: 1px solid #FFF;
 }
 
  /* Small devices (landscape phones, 576px and up) */
@@ -222,5 +352,15 @@ input#exampleInputEmail1 {
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1600px) {
-  
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .text, .text-lt {
+    font-size: 1rem;
+  }
+
+  .marker {
+    width: 400px;
+  }
 }
